@@ -12,3 +12,9 @@ test("partial array should accept multiple values of an array", () => {
 test("partial array should reject invalid order of values of an array", () => {
   expect(["a", "b", "c"]).not.toMatchPartialArray(["c", "b"]);
 });
+
+test("partial array should be usable in object matches", () => {
+  expect({ key: ["k", "e", "y"] }).toEqual({
+    key: expect.toMatchPartialArray(["k", "y"]),
+  });
+});
