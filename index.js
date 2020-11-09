@@ -4,10 +4,10 @@
  */
 function toMatchPartialArray(received, elements) {
   const pass = (() => {
-    let index = -1;
+    let index = 0;
     for (let i = 0; i < elements.length; i++) {
       const next = elements[i];
-      const found = received.indexOf(next);
+      const found = received.indexOf(next, index);
       if (found === -1) {
         return false;
       } else if (index > found) {

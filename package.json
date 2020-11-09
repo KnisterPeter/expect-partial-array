@@ -1,6 +1,6 @@
 {
   "name": "expect-partial-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "git@github.com:KnisterPeter/expect-partial-array.git",
   "author": "Markus Wolf <mail@markus-wolf.de>",
